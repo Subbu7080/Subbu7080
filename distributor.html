@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor - Organic Seeds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Farmers Connect - Organic Seeds</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="seeds">
+        <h2>Available Organic Seeds</h2>
+        <div class="seeds-list">
+            <div class="seed-card">
+                <img src="https://cherryblossomlife.com/wp-content/uploads/2019/04/tomato-plant-care-1.jpg" alt="Organic Seed 1">
+                <h3>Seed Variety 1</h3>
+                <p>High-quality seeds for better crops</p>
+                <button class="add-to-cart" onclick="addToCart('Seed Variety 1')">Add to Cart</button>
+            </div>
+            <div class="seed-card">
+                <img src="https://via.placeholder.com/150" alt="Organic Seed 2">
+                <h3>Seed Variety 2</h3>
+                <p>Perfect for organic farming</p>
+                <button class="add-to-cart" onclick="addToCart('Seed Variety 2')">Add to Cart</button>
+            </div>
+            <div class="seed-card">
+                <img src="https://via.placeholder.com/150" alt="Organic Seed 3">
+                <h3>Seed Variety 3</h3>
+                <p>Best for a sustainable farm</p>
+                <button class="add-to-cart" onclick="addToCart('Seed Variety 3')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will appear here -->
+        </ul>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Farmers Connect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Cart functionality
+        let cart = [];
+
+        function addToCart(seed) {
+            cart.push(seed);
+            displayCart();
+        }
+
+        function displayCart() {
+            const cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = ''; // Clear current cart
+
+            cart.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                cartItems.appendChild(li);
+            });
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert("Your cart is empty. Please add items to your cart.");
+            } else {
+                alert("Proceeding to checkout...");
+            }
+        }
+    </script>
+
+</body>
+</html>

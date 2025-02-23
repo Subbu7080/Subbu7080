@@ -1,0 +1,227 @@
+/* Apply background image to the entire body */
+body {
+    background-image: url('https://wallpapercave.com/wp/wp6592172.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Makes sure the image covers the whole page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Styling for header */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero section */
+#hero {
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Product section */
+#products {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background to improve readability */
+}
+
+#products h2 {
+    font-size: 28px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+
+/* Contact form styling */
+#contact {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #218838;
+}
+
+/* About section */
+#about {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for about us */
+    text-align: center;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Seeds section on distributor page */
+#seeds {
+    padding: 40px;
+    text-align: center;
+}
+
+.seed-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seed-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Cart section styling */
+#cart {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
